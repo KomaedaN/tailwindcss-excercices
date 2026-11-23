@@ -2,12 +2,59 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Exercice n°11</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exercice n°12 - Layout</title>
     <link href="../dist/style.css"
           rel="stylesheet">
 </head>
 <body class="bg-slate-100">
-<!-- TODO -->
+<div class="grid min-h-screen grid-rows-[auto_1fr_auto] md:grid-cols-[16rem_1fr]">
+    <header class="flex items-center justify-between border-b border-slate-200 bg-white px-6 py-4 md:col-span-2">
+        <a href="#" class="text-xl font-bold">LOGO</a>
+        <span class="text-sm text-slate-600">John Doe</span>
+    </header>
+    <aside class="hidden border-r border-slate-200 bg-white p-4 md:block">
+        <nav class="flex flex-col gap-1 text-sm font-medium text-slate-700">
+            <a href="#" class="rounded-lg px-3 py-2 hover:bg-slate-100 bg-slate-100 text-slate-900">Tableau de bord</a>
+            <a href="#" class="rounded-lg px-3 py-2 hover:bg-slate-100 ">Projets</a>
+            <a href="#" class="rounded-lg px-3 py-2 hover:bg-slate-100 ">Équipe</a>
+            <a href="#" class="rounded-lg px-3 py-2 hover:bg-slate-100 ">Paramètres</a>
+        </nav>
+    </aside>
+    <main class="p-6 md:p-8">
+        <h1 class="text-2xl font-bold">Tableau de bord</h1>
+        <div class="mt-6 grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+            <div class="rounded-2xl border border-slate-200 bg-white p-6">
+                <p class="text-sm text-slate-500">Projets</p>
+                <p class="mt-1 text-3xl font-bold text-slate-800">128</p>
+            </div>
+            <div class="rounded-2xl border border-slate-200 bg-white p-6">
+                <p class="text-sm text-slate-500">Clients</p>
+                <p class="mt-1 text-3xl font-bold text-slate-800">32</p>
+            </div>
+            <div class="rounded-2xl border border-slate-200 bg-white p-6">
+                <p class="text-sm text-slate-500">Avis</p>
+                <p class="mt-1 text-3xl font-bold text-slate-800">4.9</p>
+            </div>
+            <div class="rounded-2xl border border-slate-200 bg-white p-6">
+                <p class="text-sm text-slate-500">Revenus</p>
+                <p class="mt-1 text-3xl font-bold text-slate-800">12k€</p>
+            </div>
+        </div>
+        <div class="mt-6 grid gap-6 lg:grid-cols-3">
+            <section class="rounded-2xl border border-slate-200 bg-white p-6 lg:col-span-2">
+                <h2 class="font-bold">Activité récente</h2>
+                <p class="mt-2 text-slate-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </section>
+            <section class="rounded-2xl border border-slate-200 bg-white p-6">
+                <h2 class="font-bold">Notifications</h2>
+                <p class="mt-2 text-slate-600">Aucune nouvelle notification.</p>
+            </section>
+        </div>
+    </main>
+    <footer class="border-t border-slate-200 bg-white px-6 py-4 text-center text-sm text-slate-500 md:col-span-2">
+        © 2026 Mon projet Tailwind
+    </footer>
+</div>
 </body>
 </html>
-

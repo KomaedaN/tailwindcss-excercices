@@ -2,12 +2,97 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Exercice n°6</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exercice n°6 - La grille responsive</title>
     <link href="../dist/style.css"
           rel="stylesheet">
 </head>
 <body class="bg-slate-100">
-<!-- TODO -->
+<header class="border-b border-slate-200 bg-white ">
+    <div class=" flex items-center justify-between px-6 py-4">
+        <a href="#" class="text-xl font-bold text-slate-900">LOGO</a>
+        <nav class="flex gap-4 text-sm font-medium text-slate-700">
+            <a href="#" class="hover:text-slate-900">Services</a>
+            <a href="#" class="hover:text-slate-900">Projets</a>
+            <a href="#" class="hover:text-slate-900">Contact</a>
+        </nav>
+    </div>
+</header>
+<main class="mx-auto max-w-6xl p-4 sm:p-8">
+    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <article class="relative flex flex-col rounded-2xl border border-slate-200 bg-white p-6 ">
+            <img src="https://placehold.co/415x277?text=Juste une image" alt="Juste une image" class="w-full aspect-3/2 rounded-xl object-cover "/>
+            <h2 class="mt-6 text-xl font-bold">Une simple carte avec un titre sur deux lignes.</h2>
+            <p class="mt-2 text-slate-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="mt-6 flex flex-wrap gap-3">
+                <a href="#" class="rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-900 shadow-sm">En savoir plus &rarr;</a>
+                <a href="#" class="rounded-lg bg-slate-800 px-4 py-3 text-sm font-bold text-white shadow-sm">Contacter</a>
+            </div>
+        </article>
+        <article class="relative flex flex-col rounded-2xl border border-slate-200 bg-white p-6 ">
+            <img src="https://placehold.co/415x277?text=Juste une image" alt="Juste une image" class="w-full aspect-3/2 rounded-xl object-cover "/>
+            <h2 class="mt-6 text-xl font-bold">Une simple carte avec un titre sur deux lignes.</h2>
+            <p class="mt-2 text-slate-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="mt-6 flex flex-wrap gap-3">
+                <a href="#" class="rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-900 shadow-sm">En savoir plus &rarr;</a>
+                <a href="#" class="rounded-lg bg-slate-800 px-4 py-3 text-sm font-bold text-white shadow-sm">Contacter</a>
+            </div>
+        </article>
+        <article class="relative flex flex-col rounded-2xl border border-slate-200 bg-white p-6 ">
+            <img src="https://placehold.co/415x277?text=Juste une image" alt="Juste une image" class="w-full aspect-3/2 rounded-xl object-cover "/>
+            <h2 class="mt-6 text-xl font-bold">Une simple carte avec un titre sur deux lignes.</h2>
+            <p class="mt-2 text-slate-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="mt-6 flex flex-wrap gap-3">
+                <a href="#" class="rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-900 shadow-sm">En savoir plus &rarr;</a>
+                <a href="#" class="rounded-lg bg-slate-800 px-4 py-3 text-sm font-bold text-white shadow-sm">Contacter</a>
+            </div>
+        </article>
+        <article class="relative flex flex-col rounded-2xl border border-slate-200 bg-white p-6 ">
+            <img src="https://placehold.co/415x277?text=Juste une image" alt="Juste une image" class="w-full aspect-3/2 rounded-xl object-cover "/>
+            <h2 class="mt-6 text-xl font-bold">Une simple carte avec un titre sur deux lignes.</h2>
+            <p class="mt-2 text-slate-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="mt-6 flex flex-wrap gap-3">
+                <a href="#" class="rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-900 shadow-sm">En savoir plus &rarr;</a>
+                <a href="#" class="rounded-lg bg-slate-800 px-4 py-3 text-sm font-bold text-white shadow-sm">Contacter</a>
+            </div>
+        </article>
+        <article class="relative flex flex-col rounded-2xl border border-slate-200 bg-white p-6 ">
+            <img src="https://placehold.co/415x277?text=Juste une image" alt="Juste une image" class="w-full aspect-3/2 rounded-xl object-cover "/>
+            <h2 class="mt-6 text-xl font-bold">Une simple carte avec un titre sur deux lignes.</h2>
+            <p class="mt-2 text-slate-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="mt-6 flex flex-wrap gap-3">
+                <a href="#" class="rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-900 shadow-sm">En savoir plus &rarr;</a>
+                <a href="#" class="rounded-lg bg-slate-800 px-4 py-3 text-sm font-bold text-white shadow-sm">Contacter</a>
+            </div>
+        </article>
+        <article class="relative flex flex-col rounded-2xl border border-slate-200 bg-white p-6 ">
+            <img src="https://placehold.co/415x277?text=Juste une image" alt="Juste une image" class="w-full aspect-3/2 rounded-xl object-cover "/>
+            <h2 class="mt-6 text-xl font-bold">Une simple carte avec un titre sur deux lignes.</h2>
+            <p class="mt-2 text-slate-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="mt-6 flex flex-wrap gap-3">
+                <a href="#" class="rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-900 shadow-sm">En savoir plus &rarr;</a>
+                <a href="#" class="rounded-lg bg-slate-800 px-4 py-3 text-sm font-bold text-white shadow-sm">Contacter</a>
+            </div>
+        </article>
+        <article class="relative flex flex-col rounded-2xl border border-slate-200 bg-white p-6 ">
+            <img src="https://placehold.co/415x277?text=Juste une image" alt="Juste une image" class="w-full aspect-3/2 rounded-xl object-cover "/>
+            <h2 class="mt-6 text-xl font-bold">Une simple carte avec un titre sur deux lignes.</h2>
+            <p class="mt-2 text-slate-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="mt-6 flex flex-wrap gap-3">
+                <a href="#" class="rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-900 shadow-sm">En savoir plus &rarr;</a>
+                <a href="#" class="rounded-lg bg-slate-800 px-4 py-3 text-sm font-bold text-white shadow-sm">Contacter</a>
+            </div>
+        </article>
+        <article class="relative flex flex-col rounded-2xl border border-slate-200 bg-white p-6 ">
+            <img src="https://placehold.co/415x277?text=Juste une image" alt="Juste une image" class="w-full aspect-3/2 rounded-xl object-cover "/>
+            <h2 class="mt-6 text-xl font-bold">Une simple carte avec un titre sur deux lignes.</h2>
+            <p class="mt-2 text-slate-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="mt-6 flex flex-wrap gap-3">
+                <a href="#" class="rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-900 shadow-sm">En savoir plus &rarr;</a>
+                <a href="#" class="rounded-lg bg-slate-800 px-4 py-3 text-sm font-bold text-white shadow-sm">Contacter</a>
+            </div>
+        </article>
+    </div>
+</main>
 </body>
 </html>
-

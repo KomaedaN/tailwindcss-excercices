@@ -2,12 +2,36 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Exercice n°10</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exercice n°11 - Le dark mode</title>
     <link href="../dist/style.css"
           rel="stylesheet">
 </head>
-<body class="bg-slate-100">
-<!-- TODO -->
+<body class="min-h-screen bg-slate-100 text-slate-900 dark:bg-slate-900 dark:text-slate-100">
+<main class="mx-auto max-w-2xl p-8">
+    <div class="mb-8 flex items-center justify-between">
+        <h1 class="text-3xl font-bold">Dark mode</h1>
+        <button id="toggle" type="button" class="rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-900 shadow-sm dark:border-slate-600 dark:bg-slate-800 dark:text-slate-100">
+            Changer de thème
+        </button>
+    </div>
+    <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-700 dark:bg-slate-800">
+        <img src="https://placehold.co/415x277?text=Juste une image" alt="Juste une image" class="w-full aspect-3/2 rounded-xl object-cover dark:opacity-80"/>
+        <h2 class="mt-6 text-xl font-bold text-slate-900 dark:text-white">Une simple carte avec un titre sur deux lignes.</h2>
+        <p class="mt-2 text-slate-600 dark:text-slate-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="mt-6 flex gap-3">
+            <a href="#" class="rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-900 shadow-sm dark:border-slate-600 dark:bg-slate-700 dark:text-white">En savoir plus &rarr;</a>
+            <a href="#" class="rounded-lg bg-slate-800 px-4 py-3 text-sm font-bold text-white shadow-sm dark:bg-blue-600">Contacter</a>
+        </div>
+    </article>
+</main>
+<script>
+    const root = document.documentElement;
+    const saved = localStorage.getItem('theme');
+    if (saved ? saved === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches) root.classList.add('dark');
+    document.getElementById('toggle').addEventListener('click', () => {
+        localStorage.setItem('theme', root.classList.toggle('dark') ? 'dark' : 'light');
+    });
+</script>
 </body>
 </html>
-

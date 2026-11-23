@@ -2,12 +2,59 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Exercice n°7</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exercice n°7 - Les container queries</title>
     <link href="../dist/style.css"
           rel="stylesheet">
 </head>
 <body class="bg-slate-100">
-<!-- TODO -->
+<main class="mx-auto grid max-w-6xl gap-6 p-8 lg:grid-cols-[1fr_20rem]">
+    <section class="space-y-6">
+        <div class="@container">
+            <article class="flex flex-col gap-4 rounded-2xl border border-slate-200 bg-white p-4 @md:flex-row @md:items-center @md:gap-6 @md:p-6">
+                <img src="https://placehold.co/415x277?text=Juste une image" alt="Juste une image"
+                     class="aspect-3/2 w-full rounded-xl object-cover @md:w-1/3"/>
+                <div>
+                    <h2 class="text-lg font-bold @md:text-2xl">Carte 1 : s'adapte à son conteneur</h2>
+                    <p class="mt-2 text-slate-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="mt-4 flex flex-col gap-2 @md:flex-row">
+                        <a href="#" class="rounded-lg border border-slate-200 px-4 py-3 text-center text-sm font-medium shadow-sm">En savoir plus &rarr;</a>
+                        <a href="#" class="rounded-lg bg-slate-800 px-4 py-3 text-center text-sm font-bold text-white shadow-sm">Contacter</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="@container">
+            <article class="flex flex-col gap-4 rounded-2xl border border-slate-200 bg-white p-4 @md:flex-row @md:items-center @md:gap-6 @md:p-6">
+                <img src="https://placehold.co/415x277?text=Juste une image" alt="Juste une image"
+                     class="aspect-3/2 w-full rounded-xl object-cover @md:w-1/3"/>
+                <div>
+                    <h2 class="text-lg font-bold @md:text-2xl">Carte 2 : s'adapte à son conteneur</h2>
+                    <p class="mt-2 text-slate-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="mt-4 flex flex-col gap-2 @md:flex-row">
+                        <a href="#" class="rounded-lg border border-slate-200 px-4 py-3 text-center text-sm font-medium shadow-sm">En savoir plus &rarr;</a>
+                        <a href="#" class="rounded-lg bg-slate-800 px-4 py-3 text-center text-sm font-bold text-white shadow-sm">Contacter</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+    <aside class="space-y-6">
+        <div class="@container">
+            <article class="flex flex-col gap-4 rounded-2xl border border-slate-200 bg-white p-4 @md:flex-row @md:items-center @md:gap-6 @md:p-6">
+                <img src="https://placehold.co/415x277?text=Juste une image" alt="Juste une image"
+                     class="aspect-3/2 w-full rounded-xl object-cover @md:w-1/3"/>
+                <div>
+                    <h2 class="text-lg font-bold @md:text-2xl">Carte 3 : s'adapte à son conteneur</h2>
+                    <p class="mt-2 text-slate-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="mt-4 flex flex-col gap-2 @md:flex-row">
+                        <a href="#" class="rounded-lg border border-slate-200 px-4 py-3 text-center text-sm font-medium shadow-sm">En savoir plus &rarr;</a>
+                        <a href="#" class="rounded-lg bg-slate-800 px-4 py-3 text-center text-sm font-bold text-white shadow-sm">Contacter</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </aside>
+</main>
 </body>
 </html>
-
